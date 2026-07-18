@@ -1,5 +1,5 @@
 function updateServerInfo() {
-    fetch("status.json")
+    fetch("/status")
         .then(response => response.json())
         .then(data => {
             document.getElementById("status").textContent =
