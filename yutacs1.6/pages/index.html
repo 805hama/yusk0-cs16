@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CS1.6│日本サーバー[yusk0]</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="assets/icon2.png">
+        <link rel="apple-touch-icon" href="assets/icon2.png">
+        <meta charset="UTF-8">
+        <!-- googlefonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
+    </head>
+    <style>
+        div.container{
+            width: 800px; 
+            /* 以下_コンテナ自体を中央寄せ(margin: 0 autoで) */
+            align-items: center; justify-content: center; margin: 0 auto;}
+    </style>
+    <body>
+        <!-- コンテナで囲って800px指定 -->
+        <div class="container">
+            <!-- 以下ヘッダー -->
+            <header>
+                <a href="index.html"><img src="assets/icon2.png"></a>
+                <div class="headercolumn">
+                        <div class="marqueecontainer">
+                            <div class="marquee"><h1>yusk0's CS1.6サーバーへようこそ!!!</h1></div>
+                        </div>
+                    <div class="headerbottom">
+                        <!-- 以下三個横並び -->
+                        <h3>since2026</h3>
+                        <div class="headerbutton">
+                            <a href="index.html"><img src="assets/toppage.gif"></a>
+                            <a href="about.html"><img src="assets/about.gif"></a>
+                            <a href="https://discord.com/download"><img src="assets/discorddownload.gif"></a>
+                            <a href="https://store.steampowered.com/app/10/CounterStrike/"><img src="assets/cs1.6steam.gif"></a>
+                        </div>    
+                    </div>
+                </div>
+            </header>
+            <!-- 以下やっとコンテンツ内容 -->
+           <div class="contents">
+                <h1>Yusk0's CS1.6 Server</h1>
+                <div class="serverinfo">
+                    <h2 style="margin: 0; margin-left: -10px;">《サーバー情報》</h2>
+                    <!-- ここから下のにサーバー情報を記載 -->
+                    <table border="1" style="background-color: gray;">
+                        <tr style="background-color: rgb(201, 201, 201);">
+                            <th>ステータス</th>
+                            <td id="status">取得中...</td>
+                        </tr>
+                        <tr style="background-color: rgb(201, 201, 201);">
+                            <th>サーバーネーム</th>
+                            <td id="servername">取得中...</td>
+                        </tr>
+                        <tr style="background-color: rgb(201, 201, 201);">
+                            <th>マップ</th>
+                            <td id="map">取得中...</td>
+                        </tr>
+                        <tr style="background-color: rgb(201, 201, 201);">
+                            <th>プレイヤー人数</th>
+                            <td>
+                                <span id="players">0</span>
+                                /
+                                <span id="maxplayers">0</span>
+                                人
+                            </td>
+                        </tr>
+                        <tr style="background-color: rgb(201, 201, 201);">
+                            <th>VAC</th>
+                            <td id="vac">取得中...</td>
+                        </tr>
+                        <tr style="background-color: rgb(201, 201, 201);">
+                            <th>OS</th>
+                            <td id="os">取得中...</td>
+                        </tr>
+                    </table>
+                </div>
+                <!--  -->
+                <div class="discord">
+                <h2>《公式Discordサーバー》</h2>
+                <p>ボイスチャット,チャット等を利用する際は<br>
+                公式サーバーにボイスチャットチャンネルが設けられていますのでそちらの方をご利用ください</p>
+                <p>サーバー情報などの配信も不定期ですが行っているため<br>
+                CS1.6のサーバーを利用する際は公式サーバーに参加することをお勧めします。</p>
+                <hr style="margin-right: 10px;">
+                <h3>ボタンをクリックして参加!!!</h3>
+                <a href="https://discord.gg/Q7vdSCfA5Z"><img src="assets/discord.gif"></a>
+                </div>
+           </div> 
+           <footer>
+            <div class="bannerbox">
+            <a href="banner/yusko180x60.gif" download="yusko_cs16_server_180x60.gif"><img src="banner/yusko180x60.gif"></a>
+            <p>相互リンク募集中!!!│直リンクOK!!!</p>
+            </div>
+            <small style="margin: 0;">© yusk0server 2026</small>
+           </footer>
+           <!-- JSw(ﾟДﾟ)w -->
+           <script src="script.js"></script>
+        </div>
+    </body>
+</html>
