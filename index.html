@@ -6,17 +6,20 @@
         <link rel="icon" href="assets/icon2.png">
         <link rel="apple-touch-icon" href="assets/icon2.png">
         <meta charset="UTF-8">
+        <!-- 概要欄(検索エンジンに表示される) -->
+        <meta name="description" content="日本のCS1.6サーバー│2026年も稼働中!!!│サーバーステータスはサイト内にてご確認を!">
         <!-- googlefonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
-    </head>
+        <!-- スタイルぅ -->
     <style>
         div.container{
             width: 800px; 
             /* 以下_コンテナ自体を中央寄せ(margin: 0 autoで) */
             align-items: center; justify-content: center; margin: 0 auto;}
-    </style>
+    </style>        
+    </head>
     <body>
         <!-- コンテナで囲って800px指定 -->
         <div class="container">
@@ -42,6 +45,7 @@
             <!-- 以下やっとコンテンツ内容 -->
            <div class="contents">
                 <h1>Yusk0's CS1.6 Server</h1>
+                <div class="server">
                 <div class="serverinfo">
                     <h2 style="margin: 0; margin-left: -10px;">《サーバー情報》</h2>
                     <!-- ここから下のにサーバー情報を記載 -->
@@ -75,7 +79,20 @@
                             <th>OS</th>
                             <td id="os">取得中...</td>
                         </tr>
-                    </table>
+                    </table>    
+                </div>
+                    <!-- ここから下はクイックコネクト(serverinfoと横並び) -->
+                    <div class="quickconnect">
+                        <h2 style="margin: 0; margin-left: -10px;">《クイックコネクト》</h2>
+                        <p style="margin: 0; padding-top: 10px; padding-bottom: 10px;">
+                        以下のボタンをクリックすることで<br>
+                        steam経由でサーバーに参加できます╰(￣ω￣ｏ)</p>
+                        <a href="steam://connect/59.166.134.37:27015" class="joinbutton"><img src="assets/joinbutton.gif"></a>
+                        <p style="margin: 0; padding-top: 10px; padding-bottom: 10px;">
+                        又は、CS1.6のコンソールで connect ip コマンドを使用して参加してください。<br>
+                        IPはDiscordサーバーのipチャンネルに記載されています。
+                        </p>
+                    </div>
                 </div>
                 <!--  -->
                 <div class="discord">
@@ -92,7 +109,8 @@
            <footer>
             <div class="bannerbox">
             <a href="banner/yusko180x60.gif" download="yusko_cs16_server_180x60.gif"><img src="banner/yusko180x60.gif"></a>
-            <p>相互リンク募集中!!!│直リンクOK!!!</p>
+            <p>バナー直リンクOK!!!<br>
+            クリックでダウンロード</p>
             </div>
             <small style="margin: 0;">© yusk0server 2026</small>
            </footer>
