@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+}
+
+
+/* ここからheaderのcss */
+header {
+    width:100%;
+    padding-top: 10px;
+    padding-left: 10px;
+    background: url(assets/header-background.png) center / cover;
+    display: flex;
+    gap: 10px;
+    /* ↓上の余白消すの面倒だったからがさつwww */
+    margin-top: -10px;
+    border-bottom:solid 10px rgb(0, 217, 255);
+}
+header img {
+    width: 85px;
+    height: auto;
+}
+/* marqueeの下に他のコンテナを置けるようにする */
+div.headercolumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* headerimgとmarqueeを横並びにする */
+/* marqueeの外側のコンテナ */
+div.marqueecontainer {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 680px;
+    height: 45px;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+}
+/* marqueeのテキスト部分 */
+div.marquee {
+    display: inline-block;
+    animation: scroll 8s linear infinite;
+}
+/* marqueeは非推奨なのでアニメーションで疑似marquee */
+@keyframes scroll {
+    0% {transform: translate(100%, 0);}
+    100% {transform: translate(-100%, 0);}
+}
+/* header内marqueeの下に来るコンテンツの親 */
+div.headerbottom {
+    display: flex;
+    align-items: center;
+}
+/* header内marqueeの下にくるh3*/
+header h3 {
+    margin: 0;
+    color: white;
+    font-family: serif;
+    font-size: 24px;
+}
+/* marqueeの下に位置するボタンたちのサイズ指定 */
+div.headerbottom img {
+    height: 40px;
+    width: auto;
+}
+/* marqueeの下に位置するボタンたちにカーソルを合わせたときに色を付ける */
+div.headerbottom img {
+	border:solid 2px #ffffff00;
+}
+div.headerbottom img:hover {
+	border:solid 2px #fdfdfd;
+}
+/* marqueeの下に位置するボタンたちを右寄せ+位置調節 */
+div.headerbutton {
+    margin-left: auto;
+    padding-top: 5px;
+}
+
+/* ここからコンテンツ！！！*/
+/* やっとheader書き終わった～(hamaの独り言) */
+/* まあ、こんなソースコード読んでる人いないか...(2026年7月18日11時37分) */
+
+body {background-image: url(assets/background.gif);margin-bottom: -5px;}
+
+div.contents {
+    min-height: 100vh;
+    /* ↓headerとの隙間消すの面倒でまたまたがさつな無理やり方式w(ﾟДﾟ)w */
+    margin-top: -20px;
+    background-color: white;
+    padding-left: 10px;
+}
+
+div.contents h1 {
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: -20px;
+    padding: 10px;
+}
+
+/* サーバー情報 */
+/* ここ肝心!!!*/
+div.serverinfo {
+    padding-left: 10px;
+    background-color: burlywood;
+    border: solid 3px rgb(222, 122, 0);
+    width: 780px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Discord */
+div.discord {
+    padding-left: 10px;
+    background-color: burlywood;
+    border: solid 3px rgb(222, 122, 0);
+    width: 780px;
+}
+div.discord img {
+    width: 240px;
+    height: auto;
+}
+div.discord img {
+	border:solid 5px #ffffff00;
+}
+div.discord img:hover {
+	border-bottom:solid 5px rgb(200, 135, 50);
+    border-right:solid 6px rgb(200, 135, 50);
+}
+div.discord h2 {
+    margin: 0;
+    font-size: 24px;
+    padding: 5px;
+    margin-bottom: -20px;
+    margin-left: -15px;
+}
+div.discord h3 {
+    margin: 0;
+    color: rgb(90, 90, 255);
+    font-size: 38px;
+    font-family: "Rampart One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* コピーライトTE・KI・NA・?（） */
+footer {
+    background-color: gray;
+    padding: 10px;
+}
+/* footerのbannerbox */
+div.bannerbox {
+    padding: 0.5em 1em;
+    margin: 0 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: solid 5px blue;
+    display: flex;
+    align-items: center;
+}
+div.bannerbox p {
+    margin: 0;
+    padding-left: 5px;
+    font-size: 32px;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+div.bannerbox img {
+    margin-bottom: -5px;
+}
