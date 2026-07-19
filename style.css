@@ -121,6 +121,13 @@ div.quickconnect {
     padding: 10px;
 }
 
+div.quickconnect img {
+	border:solid 2px #ffffff00;
+}
+div.quickconnect img:hover {
+	border:solid 2px #fdfdfd;
+}
+
 /* Discord */
 div.discord {
     padding-left: 10px;
